@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mumma First — Because Every Mother Deserves Comfort and Care</title>
+<meta name="description" content="Mumma First makes thoughtfully designed essentials for pregnancy, postpartum and early motherhood — because you deserve to be held too.">
+
+<!-- Fonts: Fraunces (display) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Scroll progress indicator -->
+<div class="progress-rail" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Mumma First
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#story" data-nav>Our Story</a>
+      <a href="#pillars" data-nav>Philosophy</a>
+      <a href="#offerings" data-nav>Offerings</a>
+      <a href="#faq" data-nav>FAQ</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#final-cta" class="btn btn-small btn-primary">Shop the Edit</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-scene" aria-hidden="true">
+      <svg class="blob blob-a" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <path fill="url(#gradA)" d="M421,313Q411,376,362,415Q313,454,254,447Q195,440,151,398Q107,356,104,297Q101,238,142,196Q183,154,242,127Q301,100,354,133Q407,166,421,224Q435,250,421,313Z"/>
+        <defs>
+          <linearGradient id="gradA" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="var(--rose)"/>
+            <stop offset="100%" stop-color="var(--gold)"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg class="blob blob-b" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <path fill="var(--sage)" d="M438,300Q423,375,362,411Q301,447,244,417Q187,387,143,341Q99,295,131,235Q163,175,222,144Q281,113,341,140Q401,167,424,225Q447,250,438,300Z"/>
+      </svg>
+      <div class="cursor-glow" id="cursorGlow"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow reveal" data-reveal>Mumma First</p>
+      <h1 class="hero-title reveal" data-reveal>
+        Because every mother<br>
+        deserves to be <em>held</em>, too.
+      </h1>
+      <p class="hero-sub reveal" data-reveal>
+        Thoughtfully made for the season that quietly rewrites everything —
+        so comfort finds you before you have to ask for it.
+      </p>
+      <div class="hero-ctas reveal" data-reveal>
+        <a href="#story" class="btn btn-primary">Discover our story</a>
+        <a href="#offerings" class="btn btn-ghost">See what we made</a>
+      </div>
+    </div>
+
+    <figure class="hero-quote reveal" data-reveal>
+      <blockquote>"Motherhood isn't just a journey. It's everything."</blockquote>
+    </figure>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span> Scroll</div>
+  </section>
+
+  <!-- ============ WHY WE EXIST ============ -->
+  <section class="section" id="story">
+    <div class="container split">
+      <div class="split-visual reveal" data-reveal>
+        <div class="visual-frame">
+          <div class="visual-placeholder">
+            <span>Photo space</span>
+            <p>Drop a warm lifestyle photo here (e.g. <code>assets/story.jpg</code>)</p>
+          </div>
+          <div class="visual-tag">Est. for the fourth trimester</div>
+        </div>
+      </div>
+
+      <div class="split-text">
+        <p class="eyebrow reveal" data-reveal>Why we began</p>
+        <h2 class="section-title reveal" data-reveal>Why Mumma First <em>exists</em></h2>
+        <p class="lede reveal" data-reveal>
+          Becoming a mother is extraordinary — and it is exhausting in ways no one
+          quite prepares you for. For too long, the products made for this season
+          were designed by people who never sat with the women living it.
+        </p>
+        <p class="reveal" data-reveal>
+          Mumma First started with a simple belief: care for a new mother should
+          feel as real, as warm, and as devoted as the love she gives everyone else.
+          Not performative softness — the kind that actually holds you up.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WE SEE YOU ============ -->
+  <section class="section section-alt" id="see-you">
+    <div class="container split reverse">
+      <div class="split-text">
+        <p class="eyebrow reveal" data-reveal>We see you</p>
+        <h2 class="section-title reveal" data-reveal>You're carrying <em>so much</em>, alone</h2>
+        <p class="lede reveal" data-reveal>
+          The unsolicited advice. The endless decisions made at 2am. The quiet ache
+          of doubt that shows up even in a room full of people who love you.
+          Motherhood can feel isolating precisely when it should feel held.
+        </p>
+        <p class="reveal" data-reveal>
+          You don't need a brand that says it understands. You need one that
+          actually does — and builds like it.
+        </p>
+        <p class="signature-line reveal" data-reveal>That's the whole reason Mumma First exists.</p>
+      </div>
+
+      <div class="split-visual reveal" data-reveal>
+        <div class="visual-frame">
+          <div class="visual-placeholder alt">
+            <span>Photo space</span>
+            <p>A candid, unposed moment works best here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHILOSOPHY / PILLARS ============ -->
+  <section class="section" id="pillars">
+    <div class="container">
+      <p class="eyebrow center reveal" data-reveal>Our philosophy</p>
+      <h2 class="section-title center reveal" data-reveal>Built on what <em>matters most</em></h2>
+
+      <div class="pillars-grid">
+        <article class="pillar-card reveal" data-reveal style="--d:0">
+          <span class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 6c8 6 16 10 16 20a16 16 0 0 1-32 0c0-10 8-14 16-20Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+          <h3>Simplicity</h3>
+          <p>No noise, no clutter — only what a new mother actually needs, nothing added just to fill a shelf.</p>
+        </article>
+
+        <article class="pillar-card reveal" data-reveal style="--d:1">
+          <span class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 40s-16-9-16-21a9 9 0 0 1 16-6 9 9 0 0 1 16 6c0 12-16 21-16 21Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+          <h3>Gentleness</h3>
+          <p>Every seam, texture and ingredient is chosen with softness in mind — for skin, and for spirit.</p>
+        </article>
+
+        <article class="pillar-card reveal" data-reveal style="--d:2">
+          <span class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 5 40 11v11c0 12-7 19-16 21C15 41 8 34 8 22V11L24 5Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+          <h3>Trust</h3>
+          <p>Tested, honest, and never dressed up with claims we can't stand behind. Safe, always.</p>
+        </article>
+
+        <article class="pillar-card reveal" data-reveal style="--d:3">
+          <span class="pillar-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="5" fill="currentColor"/></svg>
+          </span>
+          <h3>Mother-first</h3>
+          <p>You are the priority, not an afterthought to the baby aisle. Every decision starts with you.</p>
+        </article>
+      </div>
+
+      <p class="feeling-line center reveal" data-reveal>
+        What motherhood should feel like: <em>comfortable, confident, supported.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ OFFERINGS ============ -->
+  <section class="section section-alt" id="offerings">
+    <div class="container">
+      <p class="eyebrow center reveal" data-reveal>What we offer</p>
+      <h2 class="section-title center reveal" data-reveal>Every stage, <em>thoughtfully covered</em></h2>
+
+      <div class="offer-grid">
+        <article class="offer-card reveal" data-reveal>
+          <div class="offer-media"><span class="offer-glyph">🤱</span></div>
+          <h3>Feeding &amp; Pumping</h3>
+          <p>Gentle tools that make nourishment feel effortless, even at 3am.</p>
+          <a href="#" class="offer-link">Explore <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="offer-card reveal" data-reveal>
+          <div class="offer-media"><span class="offer-glyph">🧸</span></div>
+          <h3>Baby Care</h3>
+          <p>Soft essentials crafted with the delicacy first days call for.</p>
+          <a href="#" class="offer-link">Explore <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="offer-card reveal" data-reveal>
+          <div class="offer-media"><span class="offer-glyph">🌿</span></div>
+          <h3>Mother Care</h3>
+          <p>Recovery and comfort designed around your changing body.</p>
+          <a href="#" class="offer-link">Explore <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="offer-card reveal" data-reveal>
+          <div class="offer-media"><span class="offer-glyph">✨</span></div>
+          <h3>Wellness</h3>
+          <p>Space to nurture your whole self — inside, outside, and everything between.</p>
+          <a href="#" class="offer-link">Explore <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PRODUCT ============ -->
+  <section class="section featured" id="product">
+    <div class="container split">
+      <div class="split-visual reveal" data-reveal>
+        <div class="visual-frame tall">
+          <div class="visual-placeholder">
+            <span>Product space</span>
+            <p>Feature your hero product here (e.g. <code>assets/product.jpg</code>)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="split-text">
+        <p class="eyebrow reveal" data-reveal>Featured</p>
+        <h2 class="section-title reveal" data-reveal>Designed for <em>real motherhood</em></h2>
+        <p class="lede reveal" data-reveal>
+          Not for the highlight reel — for 3am feeds, tender mornings, and every
+          quiet moment in between. Made to hold up to real life, because that's
+          the only kind you're living.
+        </p>
+        <p class="reveal" data-reveal>Tested by mothers. Refined by mothers. Made for you.</p>
+        <a href="#" class="btn btn-primary reveal" data-reveal>Explore the product →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL ============ -->
+  <section class="section testimonial-section">
+    <div class="container narrow center">
+      <svg class="quote-mark reveal" data-reveal viewBox="0 0 48 32" aria-hidden="true">
+        <path d="M0 32V19.5C0 8.7 6.9 1.6 17 0l2 5.4C12.5 7 9 11 9 16.5h8V32H0Zm25 0V19.5c0-10.8 6.9-17.9 17-19.5l2 5.4c-6.5 1.6-10 5.6-10 11.1h8V32H25Z" fill="currentColor"/>
+      </svg>
+      <blockquote class="reveal" data-reveal>
+        This brand makes me feel seen, held, and never alone in it.
+      </blockquote>
+      <p class="cite reveal" data-reveal>— Priya, mother of two</p>
+      <p class="reassure reveal" data-reveal>Every mother who has ever felt unsure is welcome here. We walk this with you.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container narrow">
+      <p class="eyebrow center reveal" data-reveal>Questions</p>
+      <h2 class="section-title center reveal" data-reveal>Things mothers <em>often ask</em></h2>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion-item reveal" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Are your products safe for newborns?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Every product is rigorously tested and free from harmful chemicals — safe from day one.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Are the materials gentle on sensitive skin?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Yes — we use only dermatologist-approved, hypoallergenic materials across the range.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Can I use these products on the go?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Designed for portability — compact, lightweight, and ready to travel wherever you do.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>What if a product doesn't feel right for me?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>We offer a simple, no-questions-asked return process, because your comfort matters most.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="section final-cta" id="final-cta">
+    <div class="container narrow center">
+      <p class="eyebrow center reveal" data-reveal>Your journey begins here</p>
+      <h2 class="section-title center big reveal" data-reveal>
+        Begin your journey with<br><em>comfort and confidence</em>
+      </h2>
+      <p class="lede center reveal" data-reveal>You deserve to be cared for too.</p>
+      <div class="hero-ctas center reveal" data-reveal>
+        <a href="#" class="btn btn-primary">Shop the Collection</a>
+        <a href="#story" class="btn btn-ghost">Learn our story</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="#top" class="brand footer-brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Mumma First
+    </a>
+    <p class="footer-copy">&copy; 2026 Mumma First. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">Privacy</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html>
