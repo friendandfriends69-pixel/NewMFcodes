@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dirizo Electric Breast Pump — 4-Mode Pumping & Feeding | Mumma First</title>
+<meta name="description" content="The Dirizo Electric Breast Pump: 4 gentle pumping modes, adjustable suction, USB-rechargeable and quiet enough for nighttime sessions. Made for real motherhood.">
+
+<!-- Fonts: Fraunces (display) + Inter (body) — same pair as the rest of the site -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="pdp-page">
+
+<!-- Ambient aurora background — same as the homepage, for visual continuity -->
+<div class="aurora" aria-hidden="true">
+  <span class="aurora-blob aurora-1"></span>
+  <span class="aurora-blob aurora-2"></span>
+  <span class="aurora-blob aurora-3"></span>
+</div>
+
+<!-- Scroll progress indicator -->
+<div class="progress-rail" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV (same as homepage, links point back to index.html) ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Mumma First
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="index.html#story" data-nav>Our Story</a>
+      <a href="index.html#pillars" data-nav>Philosophy</a>
+      <a href="index.html#offerings" data-nav>Offerings</a>
+      <a href="index.html#faq" data-nav>FAQ</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch accent color to sage">
+        <span class="swatch swatch-rose" aria-hidden="true"></span>
+        <span class="swatch swatch-sage" aria-hidden="true"></span>
+      </button>
+      <a href="#buy" class="btn btn-small btn-primary magnetic">Buy Now</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ BREADCRUMB ============ -->
+  <nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="index.html">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="index.html#offerings">Feeding &amp; Pumping</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">Dirizo Electric Breast Pump</span>
+  </nav>
+
+  <!-- ============ BUY BOX ============ -->
+  <section class="pdp-buy" id="buy">
+    <div class="container split pdp-buy-split">
+
+      <!-- Gallery -->
+      <div class="pdp-gallery split-visual reveal" data-reveal>
+        <div class="pdp-gallery-main" id="galleryMain">
+          <div class="visual-frame pdp-frame is-active" data-gallery-panel="0">
+            <div class="visual-placeholder">
+              <span>Front view</span>
+              <p>Drop your product photo here (e.g. <code>assets/pump-front.jpg</code>)</p>
+            </div>
+          </div>
+          <div class="visual-frame pdp-frame" data-gallery-panel="1">
+            <div class="visual-placeholder alt">
+              <span>4-mode control panel</span>
+              <p>e.g. <code>assets/pump-controls.jpg</code></p>
+            </div>
+          </div>
+          <div class="visual-frame pdp-frame" data-gallery-panel="2">
+            <div class="visual-placeholder">
+              <span>In use</span>
+              <p>e.g. <code>assets/pump-in-use.jpg</code></p>
+            </div>
+          </div>
+          <div class="visual-frame pdp-frame" data-gallery-panel="3">
+            <div class="visual-placeholder alt">
+              <span>What's in the box</span>
+              <p>e.g. <code>assets/pump-box-contents.jpg</code></p>
+            </div>
+          </div>
+        </div>
+        <div class="pdp-thumbs" id="galleryThumbs">
+          <button class="pdp-thumb is-active" data-gallery-target="0" aria-label="Show front view">1</button>
+          <button class="pdp-thumb" data-gallery-target="1" aria-label="Show control panel">2</button>
+          <button class="pdp-thumb" data-gallery-target="2" aria-label="Show in-use photo">3</button>
+          <button class="pdp-thumb" data-gallery-target="3" aria-label="Show box contents">4</button>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="pdp-info">
+        <p class="eyebrow reveal" data-reveal>Feeding &amp; Pumping · Featured Essential</p>
+        <h1 class="pdp-title reveal" data-reveal>Dirizo Electric Breast Pump</h1>
+        <p class="pdp-subtitle reveal" data-reveal>
+          4 gentle pumping modes, adjustable suction, and a quiet motor —
+          designed to fit the rhythm of real feeding days.
+        </p>
+
+        <div class="pdp-rating reveal" data-reveal aria-label="Rated 4.3 out of 5 from 1,240 ratings">
+          <span class="pdp-stars" aria-hidden="true">★★★★☆</span>
+          <!-- EDIT ME: sync with the live rating shown on your Flipkart listing -->
+          <span class="pdp-rating-text">4.3 · 1,240 ratings</span>
+        </div>
+
+        <div class="pdp-price reveal" data-reveal>
+          <!-- EDIT ME: keep this in sync with the current Flipkart price before publishing -->
+          <span class="pdp-price-now">₹899</span>
+          <span class="pdp-price-mrp">₹2,499</span>
+          <span class="pdp-price-off">64% off</span>
+        </div>
+        <p class="pdp-price-note reveal" data-reveal>Inclusive of all taxes · final price and delivery date confirmed on Flipkart at checkout.</p>
+
+        <div class="pdp-quickspecs reveal" data-reveal>
+          <div class="stat-card compact">
+            <span class="stat-number" data-count-to="4">0</span>
+            <span class="stat-label">Pumping modes</span>
+          </div>
+          <div class="stat-card compact">
+            <span class="stat-number" data-count-to="9">0</span>
+            <span class="stat-label">Suction levels</span>
+          </div>
+          <div class="stat-card compact">
+            <span class="stat-number-static">USB</span>
+            <span class="stat-label">Rechargeable</span>
+          </div>
+          <div class="stat-card compact">
+            <span class="stat-number-static"><span aria-hidden="true">&lt;</span><span class="stat-number" data-count-to="45" data-suffix="dB">0</span></span>
+            <span class="stat-label">Quiet motor</span>
+          </div>
+        </div>
+
+        <div class="pdp-qty reveal" data-reveal role="group" aria-label="Quantity">
+          <span class="pdp-qty-label">Quantity</span>
+          <button type="button" class="pdp-qty-btn" id="qtyMinus" aria-label="Decrease quantity">−</button>
+          <span class="pdp-qty-value" id="qtyValue">1</span>
+          <button type="button" class="pdp-qty-btn" id="qtyPlus" aria-label="Increase quantity">+</button>
+        </div>
+
+        <div class="pdp-cta-row reveal" data-reveal>
+          <a href="https://www.flipkart.com/dirizo-electric-breast-pump-4-mode-pumping-stimulation-suction-feeding/p/itm629a3feb35559?pid=BRPHAYTY4NM9PMBE"
+             target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic pdp-buy-btn" id="pdpBuyNow">
+            Buy Now on Flipkart
+          </a>
+          <a href="index.html" class="btn btn-ghost">← Back to Mumma First</a>
+        </div>
+        <p class="pdp-secure-note reveal" data-reveal>🔒 You'll complete your secure purchase with our retail partner, Flipkart.</p>
+
+        <div class="trust-chips reveal" data-reveal>
+          <span class="trust-chip">🧴 BPA-free materials</span>
+          <span class="trust-chip">🔋 USB rechargeable</span>
+          <span class="trust-chip">↩️ Easy Flipkart returns</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY MOMS CHOOSE THIS PUMP ============ -->
+  <section class="section" id="why">
+    <div class="container">
+      <p class="eyebrow center reveal" data-reveal>Why moms choose it</p>
+      <h2 class="section-title center reveal" data-reveal>Made for <em>real feeding days</em></h2>
+
+      <div class="offer-grid">
+        <article class="offer-card reveal" data-reveal data-tilt>
+          <div class="offer-media"><span class="offer-glyph">🌊</span></div>
+          <h3>Gentle 4-Mode Technology</h3>
+          <p>Massage, expression, mixed and custom settings, so you can match the pump to how you feel that day.</p>
+        </article>
+
+        <article class="offer-card reveal" data-reveal data-tilt>
+          <div class="offer-media"><span class="offer-glyph">🤫</span></div>
+          <h3>Whisper-Quiet Motor</h3>
+          <p>Built to stay unobtrusive, so late-night or nap-time sessions don't wake anyone else up.</p>
+        </article>
+
+        <article class="offer-card reveal" data-reveal data-tilt>
+          <div class="offer-media"><span class="offer-glyph">🔌</span></div>
+          <h3>Portable &amp; Rechargeable</h3>
+          <p>A USB-rechargeable battery means one charge — no cord tying you to a wall socket.</p>
+        </article>
+
+        <article class="offer-card reveal" data-reveal data-tilt>
+          <div class="offer-media"><span class="offer-glyph">🧼</span></div>
+          <h3>Simple to Clean</h3>
+          <p>Every part that touches milk detaches easily for a thorough wash between sessions.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW THE 4 MODES WORK ============ -->
+  <section class="section section-alt" id="modes">
+    <div class="container narrow">
+      <p class="eyebrow center reveal" data-reveal>How it works</p>
+      <h2 class="section-title center reveal" data-reveal>Four modes, <em>one gentle rhythm</em></h2>
+
+      <div class="mode-steps">
+        <div class="mode-step reveal" data-reveal style="--d:0">
+          <span class="mode-step-num">1</span>
+          <div>
+            <h3>Massage / Stimulation</h3>
+            <p>A soft, rhythmic pattern designed to gently ease you into a session and help start letdown.</p>
+          </div>
+        </div>
+        <div class="mode-step reveal" data-reveal style="--d:1">
+          <span class="mode-step-num">2</span>
+          <div>
+            <h3>Expression</h3>
+            <p>A steadier, deeper draw once milk is flowing, built for efficient expression.</p>
+          </div>
+        </div>
+        <div class="mode-step reveal" data-reveal style="--d:2">
+          <span class="mode-step-num">3</span>
+          <div>
+            <h3>Mixed</h3>
+            <p>Alternates rhythm and strength through a session, closer to a baby's natural feeding pattern.</p>
+          </div>
+        </div>
+        <div class="mode-step reveal" data-reveal style="--d:3">
+          <span class="mode-step-num">4</span>
+          <div>
+            <h3>Custom Level Control</h3>
+            <p>9 adjustable intensity levels layered on top of every mode, so you can find your own comfortable setting.</p>
+          </div>
+        </div>
+      </div>
+      <p class="mode-disclaimer">Mode names and order are typical for this pump family — please confirm the exact labels on your unit's control panel before publishing.</p>
+    </div>
+  </section>
+
+  <!-- ============ SPECIFICATIONS ============ -->
+  <section class="section" id="specs" data-cursor-glow>
+    <div class="zone-glow" aria-hidden="true"></div>
+    <div class="container narrow">
+      <p class="eyebrow center reveal" data-reveal>The details</p>
+      <h2 class="section-title center reveal" data-reveal>Specifications</h2>
+
+      <div class="spec-table reveal" data-reveal>
+        <div class="spec-row"><span class="spec-key">Pumping Modes</span><span class="spec-val">4 — Massage/Stimulation, Expression, Mixed, Custom <!-- EDIT ME: confirm exact mode names --></span></div>
+        <div class="spec-row"><span class="spec-key">Suction Levels</span><span class="spec-val">9 adjustable levels <!-- EDIT ME --></span></div>
+        <div class="spec-row"><span class="spec-key">Power</span><span class="spec-val">Built-in rechargeable battery, USB charging cable included</span></div>
+        <div class="spec-row"><span class="spec-key">Charging Time</span><span class="spec-val">Approx. 2 hours to full charge <!-- EDIT ME --></span></div>
+        <div class="spec-row"><span class="spec-key">Material</span><span class="spec-val">BPA-free PP body, food-grade silicone flange</span></div>
+        <div class="spec-row"><span class="spec-key">Flange Size</span><span class="spec-val">Standard fit <!-- EDIT ME: add exact mm size from your listing --></span></div>
+        <div class="spec-row"><span class="spec-key">Bottle Capacity</span><span class="spec-val">~180–210ml <!-- EDIT ME --></span></div>
+        <div class="spec-row"><span class="spec-key">Noise Level</span><span class="spec-val">Designed to run quietly — low enough for nighttime use</span></div>
+        <div class="spec-row"><span class="spec-key">Weight</span><span class="spec-val">Lightweight, one-hand portable design</span></div>
+        <div class="spec-row"><span class="spec-key">In the Box</span><span class="spec-val">1× Electric Breast Pump, 1× USB Cable, 1× User Manual <!-- EDIT ME: match your listing's exact box contents --></span></div>
+        <div class="spec-row"><span class="spec-key">Warranty</span><span class="spec-val">As stated on the Flipkart listing at time of purchase</span></div>
+      </div>
+      <p class="spec-disclaimer reveal" data-reveal>⚠️ These specifications describe what's typical for this style of pump. Please double-check every row above against your actual product packaging and Flipkart listing before publishing.</p>
+    </div>
+  </section>
+
+  <!-- ============ SAFETY & TRUST ============ -->
+  <section class="section" id="safety">
+    <div class="container split reverse">
+      <div class="split-visual reveal" data-reveal>
+        <div class="visual-frame">
+          <div class="visual-placeholder alt">
+            <span>Safety in every detail</span>
+            <p>Feature a materials/parts photo here (e.g. <code>assets/pump-materials.jpg</code>)</p>
+          </div>
+        </div>
+      </div>
+      <div class="split-text">
+        <p class="eyebrow reveal" data-reveal>Built with your baby in mind</p>
+        <h2 class="section-title reveal" data-reveal>Safety you can <em>actually feel</em></h2>
+        <p class="lede reveal" data-reveal>
+          Every part that touches milk is made from BPA-free, food-grade
+          material, and designed to come apart easily for a proper clean
+          between every session.
+        </p>
+        <ul class="safety-list reveal" data-reveal>
+          <li>BPA-free, food-grade materials throughout</li>
+          <li>Detachable parts for thorough cleaning</li>
+          <li>Quality-checked before it ships</li>
+          <li>Adjustable suction — start gentle, build up only if you want to</li>
+        </ul>
+        <p class="safety-note reveal" data-reveal>
+          As with any feeding equipment, sterilize all milk-contact parts
+          before first use and clean thoroughly after every session. If you
+          have questions about supply, latch, or a medical condition that
+          affects pumping, please check with your doctor or a lactation
+          consultant.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <!-- Sample quotes — replace with real, verified customer reviews before publishing -->
+  <section class="section section-alt" id="reviews">
+    <div class="container narrow center">
+      <p class="eyebrow center reveal" data-reveal>What moms are saying</p>
+      <h2 class="section-title center reveal" data-reveal>Sample reviews <em>(replace before launch)</em></h2>
+
+      <div class="carousel reveal" data-reveal id="testimonialCarousel">
+        <div class="carousel-track">
+          <div class="carousel-slide is-active">
+            <blockquote>The mixed mode genuinely feels closer to natural feeding than other pumps I've tried. It's quiet enough that I've pumped during nap time without waking my daughter.</blockquote>
+            <p class="cite">— Sample Customer</p>
+          </div>
+          <div class="carousel-slide">
+            <blockquote>Charges fast and holds its charge across a full day of sessions. Being able to leave the cord at home is a small thing that matters a lot.</blockquote>
+            <p class="cite">— Sample Customer</p>
+          </div>
+          <div class="carousel-slide">
+            <blockquote>Easy to take apart and wash between uses. The adjustable levels meant I could start gentle in the first week and build up as I got more comfortable.</blockquote>
+            <p class="cite">— Sample Customer</p>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-arrow" id="carouselPrev" aria-label="Previous testimonial">←</button>
+          <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Choose testimonial"></div>
+          <button class="carousel-arrow" id="carouselNext" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT FAQ ============ -->
+  <section class="section" id="pdp-faq">
+    <div class="container narrow">
+      <p class="eyebrow center reveal" data-reveal>Questions</p>
+      <h2 class="section-title center reveal" data-reveal>Before you <em>buy</em></h2>
+
+      <div class="accordion" id="pdpAccordion">
+        <div class="accordion-item reveal" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Is this pump safe to use as part of a newborn's feeding routine?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>It's made from BPA-free, food-grade materials and is designed for expressing breast milk at home. As with any feeding equipment, sterilize all milk-contact parts before first use, and check with your doctor or a lactation consultant if you have specific medical questions about pumping.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>How do I clean the pump between sessions?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>The flange, valve and bottle parts detach for washing. Clean milk-contact parts after every session, and sterilize regularly following the instructions in your product manual.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Can I use it hands-free?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>This is a handheld electric pump rather than a wearable, hands-free design — but its lightweight body makes it easy to hold and reposition through a session.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>How long does the battery last on a full charge?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Battery life varies with the mode and suction level you use. See the specifications above for what's typical, and check your product manual for exact figures.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>What's the return policy?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Returns and replacements are handled through Flipkart under the seller's return policy — check the current return window on the listing before you buy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="section final-cta" id="final-cta" data-cursor-glow>
+    <div class="zone-glow" aria-hidden="true"></div>
+    <div class="particles particles-soft" id="finalParticles" data-count="12" aria-hidden="true"></div>
+    <div class="container narrow center">
+      <p class="eyebrow center reveal" data-reveal>Ready when you are</p>
+      <h2 class="section-title center big reveal" data-reveal>
+        Ready to feel supported<br>at every <em>feed</em>?
+      </h2>
+      <p class="lede center reveal" data-reveal>The Dirizo Electric Breast Pump, ready whenever you need it.</p>
+      <div class="hero-ctas center reveal" data-reveal>
+        <a href="https://www.flipkart.com/dirizo-electric-breast-pump-4-mode-pumping-stimulation-suction-feeding/p/itm629a3feb35559?pid=BRPHAYTY4NM9PMBE"
+           target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic">Buy Now on Flipkart</a>
+        <a href="index.html" class="btn btn-ghost">← Back to Mumma First</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER (same as homepage) ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="index.html" class="brand footer-brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Mumma First
+    </a>
+    <p class="footer-copy">&copy; 2026 Mumma First. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">Privacy</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg class="to-top-ring" viewBox="0 0 44 44" aria-hidden="true">
+    <circle class="to-top-ring-bg" cx="22" cy="22" r="19"></circle>
+    <circle class="to-top-ring-fg" id="toTopRing" cx="22" cy="22" r="19"></circle>
+  </svg>
+  <span class="to-top-arrow" aria-hidden="true">↑</span>
+</button>
+
+<!-- Sticky buy bar — desktop: glass pill bottom-left · mobile: full-width dock (see product.js) -->
+<div class="pdp-buy-bar" id="pdpBuyBar">
+  <div class="pdp-buy-bar-inner">
+    <div class="pdp-buy-bar-price">
+      <!-- EDIT ME: keep in sync with the price above -->
+      <span class="pdp-buy-bar-now">₹899</span>
+      <span class="pdp-buy-bar-mrp">₹2,499</span>
+    </div>
+    <a href="https://www.flipkart.com/dirizo-electric-breast-pump-4-mode-pumping-stimulation-suction-feeding/p/itm629a3feb35559?pid=BRPHAYTY4NM9PMBE"
+       target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic">Buy Now</a>
+  </div>
+</div>
+
+<!-- Custom cursor (desktop, motion-safe only — see main.js) -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<script src="main.js"></script>
+<script src="product.js"></script>
+</body>
+</html>
