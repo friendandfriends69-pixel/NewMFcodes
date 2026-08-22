@@ -37,7 +37,7 @@ in real photography without fighting existing files.
 
 ## Product pages
 
-`dirizo-electric-breast-pump.html` is the first product page, built on the
+`breast-pump.html` is the first product page, built on the
 exact same design system as the homepage (it links the same `style.css` and
 loads `main.js` for all the shared nav/cursor/scroll behavior, plus a small
 `product.js` for its own gallery, quantity stepper and sticky buy bar).
